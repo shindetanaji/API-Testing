@@ -17,7 +17,6 @@ Scenario Outline: To validate status code for foreign currency exchange rates ap
 		|	test_case	 | 		 baseURI			|basePath   	| status_code |
 		|with latest api |http://api.ratesapi.io/ 	|api/latest		|	200		  |
 		|with date api	 |http://api.ratesapi.io/   |api/2010-01-12	|	200		  |
-		#|with date api	 |https://api.ratesapi.io/   |api/			|	400		  |
 
 @DataValidationforLatest
 Scenario Outline: To validate response data for latest foreign exchange rates
@@ -27,10 +26,10 @@ Scenario Outline: To validate response data for latest foreign exchange rates
 	And  To validate response data should be"<country-name>" and "<country-rates>"
 Examples:
 			|country-name| country-rates|
-			|  	ind  	 |	 90.1338    |
-			|	GBP		 |	 0.9161		|		
-			|	HKD		 |	 9.4378		|
-			|	IDR		 |  17351.52	|
+			|  	ind  	 |	 89.7945    |
+			|	GBP		 |	 0.907		|		
+			|	HKD		 |	 9.4321		|
+			|	IDR		 |  17351.03	|
 
 
 @DataValidationforSpecificDate
