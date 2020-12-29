@@ -74,5 +74,8 @@ public class HSBCAPISteps {
 		Float floatVal = Float.valueOf(value).floatValue();
 		Assert.assertEquals(actualResult, floatVal);
 	}
-
+public void test()
+{
+	System.out.println("chnaged in class file");
+}
 }
