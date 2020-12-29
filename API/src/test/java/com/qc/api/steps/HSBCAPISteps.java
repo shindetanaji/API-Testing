@@ -78,8 +78,5 @@ public void test()
 {
 	System.out.println("chnaged in class file");
 }
-public void test1()
-{
-	System.out.println("chnaged in class file");
-}
+
 }
